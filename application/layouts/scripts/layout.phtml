@@ -1,0 +1,17 @@
+<?php echo $this->doctype() ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<?php echo $this->headLink()->appendStylesheet('/static/css/bootstrap.css') ?>
+
+<?php $this->javascriptHelper() ?> 
+</head>
+<body>
+	<a href="<?php echo $this->url(
+		array('controller'=>'zenstein'),
+		'default',
+		true) ?>">Guestbook</a>
+<?php echo $this->layout()->content ?>
+</body>
+</html>
